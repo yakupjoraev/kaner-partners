@@ -125,7 +125,7 @@
 
     p {
       color: rgba(0, 0, 0, 0.51);
-      font-family: var(--secondary-font);
+      font-family: var(--primary-font);
       font-size: 15px;
       font-weight: 400;
       line-height: 125.9%;
@@ -147,7 +147,7 @@
 
     color: #FFF;
     text-align: center;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 20px;
     font-weight: 700;
     line-height: 125.9%;
@@ -302,7 +302,7 @@
   &__stages-count {
     color: rgba(0, 0, 0, 0.17);
     text-align: center;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 80px;
     font-weight: 800;
     line-height: 125.9%;
@@ -362,7 +362,7 @@
   &__cities-title {
     margin-bottom: 30px;
     color: #000;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
@@ -787,7 +787,7 @@
   h4 {
     margin-bottom: 20px;
     color: #000;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 25px;
     font-weight: 700;
     line-height: 143.4%;

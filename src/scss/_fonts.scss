@@ -1,4 +1,59 @@
 @font-face {
-    font-family: '';
-    src: url('') format('');
+  font-family: 'CalvinoTrial';
+  src: url('../fonts/Calvino-Light-trial.woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'CalvinoTrial';
+  src: url('../fonts/Calvino-Regular-trial.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CalvinoTrial';
+  src: url('../fonts/Calvino-Semibold-trial.woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'CalvinoTrial';
+  src: url('../fonts/Calvino-Bold-trial.woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'CalvinoTrial';
+  src: url('../fonts/Calvino-Extrabold-trial.woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Light.woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-ExtraBold.woff');
+  font-weight: 800;
 }
