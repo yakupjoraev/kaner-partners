@@ -1,9 +1,66 @@
 <!-- Modal -->
-<div class="modal__wrapper">
-    <div class="modal">
-        <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
-        <div class="modal__title"><span>Заголовок 2</span> </div>
-        <div class="modal__body">
+
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <!-- <span class="close-modal-btn">&times;</span> -->
+    <form class="form section" action="#">
+      <h3 class="form__title page-title">Оставьте Ваши данные и наш специалист<br> свяжеться с Вами</h3>
+      <div class="form__inner">
+
+        <div class="form__gorup">
+          <label class="form__label" for="input4">Введите имя</label>
+
+          <div class="form__input-container">
+            <input class="form__input" type="text" placeholder="Имя" id="input4">
+
+            <img class="form__input-icon" src="./img/user 1.png" alt="user">
+          </div>
         </div>
-    </div>
+
+        <div class="form__gorup">
+          <label class="form__label" for="input5">Введите телефон</label>
+
+          <div class="form__input-phone">
+            <div class="form__input-select">
+              <div class="form__input-selected">
+                <img class="form__input-selected-icon" src="./img/ivrite.png" alt="">
+
+                <div class="form__input-selected-num">+972</div>
+
+                <div class="form__input-selected-arrow">
+                  <img src="./img/form__input-arrow.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+
+            <input class="form__input" type="tel" placeholder="Введите телефон" id="input5">
+          </div>
+        </div>
+
+        <div class="form__gorup">
+          <label class="form__label" for="input6">Введите E-mail</label>
+
+          <div class="form__input-container">
+            <input class="form__input" type="email" placeholder="butaev-maga@mail.ru" id="input6">
+
+            <img class="form__input-icon" src="./img/mail 1.png" alt="mail 1">
+          </div>
+        </div>
+
+        <div class="form__footer">
+          <input class="form__checkbox-input" type="checkbox" id="checkbox2" checked>
+          <label class="form__checkbox-label" for="checkbox2">
+            <div class="form__checkbox-check"></div>
+
+            <div class="form__checkbox-text">
+              <a href="#" target="_blank">С положением об обработке персональных данных </a> и
+              <a href="#" target="_blank">Политикой конфиденциальности</a> ознакомлен и согласен
+            </div>
+          </label>
+          <div class="form__checkbox"></div>
+          <button type="submit" class="form__btn btn">Получить результаты</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>

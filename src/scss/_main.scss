@@ -41,7 +41,8 @@
     }
 
     @media (max-width: $breakpoint768) {
-      font-size: 30px;
+      margin-bottom: 10px;
+      font-size: 26px;
       text-align: center;
     }
 
@@ -471,6 +472,16 @@
   &__benifits-link {}
 }
 
+.step-form__inner {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    // width: 100%;
+
+  }
+}
+
 .steps {
   overflow: hidden;
 
@@ -709,7 +720,8 @@
   // .form__title
 
   &__title {
-    max-width: 840px;
+    max-width: 880px;
+    padding: 0 20px;
     margin: 0 auto 25px;
     text-align: center;
   }
@@ -755,7 +767,7 @@
 
   &__input {
     width: 100%;
-    padding: 28px 60px;
+    padding: 24px 60px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.50);
     outline: 0;
@@ -777,6 +789,15 @@
     &:focus {
       border-color: #000;
     }
+
+    @media (max-width: $breakpoint480) {
+      padding: 20px 20px 20px 40px;
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
   }
 
   // .form__input-icon
@@ -786,19 +807,52 @@
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (max-width: $breakpoint480) {
+      left: 10px;
+    }
   }
 
   // .form__input-phone
 
-  &__input-phone {}
+  &__input-phone {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+
+    .form__input {
+      border-color: transparent;
+      padding-left: 28px;
+
+      @media (max-width: $breakpoint480) {
+        padding: 20px 20px 20px 20px;
+      }
+    }
+
+    @media (max-width: $breakpoint480) {
+      grid-template-columns: 100px 1fr;
+    }
+  }
 
   // .form__input-select
 
-  &__input-select {}
+  &__input-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.50);
+  }
 
   // .form__input-selected
 
-  &__input-selected {}
+  &__input-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    cursor: pointer;
+  }
 
   // .form__input-selected-icon
 
@@ -810,7 +864,11 @@
 
   // .form__input-selected-arrow
 
-  &__input-selected-arrow {}
+  &__input-selected-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   // .form__footer
 

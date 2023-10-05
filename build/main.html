@@ -11,14 +11,14 @@
 
 <body class="main__body secondary-font">
   <!-- Header -->
-  <header class="header">
+  <header class="header header-main">
   <!-- Navbar -->
   <nav class="nav">
     <div class="container">
       <div class="navbar">
         <div class="logo"> <a href="#"> <img src="./img/logo.png" alt="logo"> </a> </div>
         <ul class="menu">
-          <li class="menu__item"><a href="#" class="menu__item-link active" data-scroll>Главная</a></li>
+          <li class="menu__item active"><a href="#" class="menu__item-link " data-scroll>Главная</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Актуальные объекты</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Подобрать недвижимость</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Новости</a></li>
@@ -26,11 +26,11 @@
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Отзывы</a></li>
           <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>FAQ</a></li>
 
-
-          <li class="menu__item menu__item--btn">
-            <a href="#" class="menu__item-link menu__item-link--btn" data-scroll>Помощь эксперта</a>
-          </li>
         </ul>
+        <div class="menu__item--btn open-modal-btn" data-modal-id="modal1">
+          <a href="#" class="menu__item-link--btn" data-scroll>Помощь эксперта</a>
+        </div>
+
         <div class="burger">
           <span></span>
         </div>
@@ -297,6 +297,14 @@
   </div>
 </section>
 
+<section class="step-form section">
+  <div class="container">
+    <div class="step-form__inner">
+      <img src="./img/qq.jpg" alt="">
+    </div>
+  </div>
+</section>
+
 <form class="form section" action="#">
   <h3 class="form__title page-title">Оставьте Ваши данные и наш специалист<br> свяжеться с Вами</h3>
   <div class="form__inner">
@@ -356,6 +364,72 @@
     </div>
   </div>
 </form>
+    <!-- Modal -->
+
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <!-- <span class="close-modal-btn">&times;</span> -->
+    <form class="form section" action="#">
+      <h3 class="form__title page-title">Оставьте Ваши данные и наш специалист<br> свяжеться с Вами</h3>
+      <div class="form__inner">
+
+        <div class="form__gorup">
+          <label class="form__label" for="input4">Введите имя</label>
+
+          <div class="form__input-container">
+            <input class="form__input" type="text" placeholder="Имя" id="input4">
+
+            <img class="form__input-icon" src="./img/user 1.png" alt="user">
+          </div>
+        </div>
+
+        <div class="form__gorup">
+          <label class="form__label" for="input5">Введите телефон</label>
+
+          <div class="form__input-phone">
+            <div class="form__input-select">
+              <div class="form__input-selected">
+                <img class="form__input-selected-icon" src="./img/ivrite.png" alt="">
+
+                <div class="form__input-selected-num">+972</div>
+
+                <div class="form__input-selected-arrow">
+                  <img src="./img/form__input-arrow.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+
+            <input class="form__input" type="tel" placeholder="Введите телефон" id="input5">
+          </div>
+        </div>
+
+        <div class="form__gorup">
+          <label class="form__label" for="input6">Введите E-mail</label>
+
+          <div class="form__input-container">
+            <input class="form__input" type="email" placeholder="butaev-maga@mail.ru" id="input6">
+
+            <img class="form__input-icon" src="./img/mail 1.png" alt="mail 1">
+          </div>
+        </div>
+
+        <div class="form__footer">
+          <input class="form__checkbox-input" type="checkbox" id="checkbox2" checked>
+          <label class="form__checkbox-label" for="checkbox2">
+            <div class="form__checkbox-check"></div>
+
+            <div class="form__checkbox-text">
+              <a href="#" target="_blank">С положением об обработке персональных данных </a> и
+              <a href="#" target="_blank">Политикой конфиденциальности</a> ознакомлен и согласен
+            </div>
+          </label>
+          <div class="form__checkbox"></div>
+          <button type="submit" class="form__btn btn">Получить результаты</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
   </main>
 
   <!-- Footer -->
@@ -367,15 +441,15 @@
           <img src="./img/footer-logo.png" alt="footer logo">
         </a>
 
-        <nav class="footer__nav">
-          <a class="footer__nav-link active" href="#">Главная</a>
-          <a class="footer__nav-link" href="#">Актуальные объекты</a>
-          <a class="footer__nav-link" href="#">Подобрать недвижимость</a>
-          <a class="footer__nav-link" href="#">Новости</a>
-          <a class="footer__nav-link" href="#">Контакты</a>
-          <a class="footer__nav-link" href="#">Отзывы</a>
-          <a class="footer__nav-link" href="#">FAQ</a>
-        </nav>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"> <a class="footer__nav-link active" href="#">Главная</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Актуальные объекты</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Подобрать недвижимость</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Отзывы</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">FAQ</a></li>
+        </ul>
 
         <a class="footer__consult" href="#">Помощь эксперта</a>
       </div>
