@@ -1,0 +1,234 @@
+.primary-font {
+
+  .accordion__header {
+    flex-direction: row-reverse;
+  }
+
+  .accordion__content p {
+    text-align: right;
+  }
+
+  .contacts__form-header {
+    text-align: right;
+  }
+
+  .contacts__input {
+    text-align: right;
+
+    &::placeholder {
+      text-align: right;
+    }
+  }
+
+  .contacts__textarea {
+    text-align: right;
+
+    &::placeholder {
+      text-align: right;
+    }
+  }
+
+  .contacts__btn {
+    margin-left: auto;
+  }
+
+  .contacts__map-footer {
+    justify-content: flex-end;
+  }
+
+  .actual-objects__item {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .actual-objects__item-prices {
+    text-align: right;
+  }
+
+  .actual-objects__item-prices p {
+    justify-content: flex-end;
+  }
+
+  .actual-objects__stages-list {}
+
+  .actual-objects__stages-item {
+    align-items: flex-end;
+  }
+
+  .actual-objects__stages-item:nth-child(1) {
+    order: 3;
+  }
+
+  .actual-objects__stages-item:nth-child(2) {
+    order: 2;
+  }
+
+  .actual-objects__stages-item:nth-child(3) {
+    order: 1;
+  }
+
+  .actual-objects__stages-info {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .actual-objects__cities-title {
+    text-align: right;
+  }
+
+  .tabs__header {
+    justify-content: flex-end;
+  }
+
+  .tabs__content-item {
+    text-align: right;
+  }
+
+  .actual-objects__statistic-texts {
+    text-align: right;
+  }
+
+  .actual-objects__points-list {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .actual-objects__num-info {
+    text-align: right;
+  }
+
+  .actual-objects__item-disconts {
+    justify-content: flex-end;
+  }
+
+  .object-card__info {
+    text-align: right;
+  }
+
+  .object-card__prices {
+    align-items: flex-end;
+
+  }
+
+  .object-card__link {
+    margin-left: auto;
+  }
+
+  .about__inner {
+    flex-direction: row-reverse;
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+    }
+  }
+
+  .about__info {
+    text-align: right;
+  }
+
+  .about__info-partners {
+    margin-left: auto;
+  }
+
+  .about__info-links {
+    justify-content: flex-end;
+  }
+
+  .info-block__paying-item {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .info-block__benifits {
+    text-align: right;
+  }
+
+  .info-block__benifits ul li {
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .info-block__benifits-link {
+    margin-left: auto;
+  }
+
+  .info-block__block {
+    @media (max-width: $breakpoint992) {
+      align-items: flex-end;
+    }
+  }
+
+  .steps__row {
+    flex-direction: row-reverse;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+    }
+  }
+
+  .steps__inner {
+    @media (max-width: $breakpoint768) {
+      flex-direction: row-reverse;
+      column-gap: 16px;
+    }
+  }
+
+  .steps__nums {
+    flex-direction: row-reverse;
+  }
+
+  .form__gorup {
+    text-align: right;
+  }
+
+  .form__input {
+    text-align: right;
+
+    &::placeholder {
+      text-align: right;
+    }
+  }
+
+  .form__input-icon {
+    left: auto;
+    right: 25px;
+
+    @media (max-width: $breakpoint480) {
+      right: 10px;
+    }
+  }
+
+  .form__input-selected {
+    flex-direction: row-reverse;
+  }
+
+  .form__checkbox-label {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .form__input-phone {
+
+    .form__input {
+      @media (max-width: $breakpoint768) {
+        padding-right: 20px;
+      }
+    }
+
+    @media (max-width: $breakpoint480) {
+      grid-template-columns: 100px 1fr;
+
+      .form__input-selected-num {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .form__input {
+    @media (max-width: $breakpoint480) {
+      padding: 20px 40px 20px 20px;
+    }
+  }
+
+
+}
