@@ -885,6 +885,7 @@
     height: 0;
     position: absolute;
     z-index: -100;
+    opacity: 0;
 
     &:checked~.form__checkbox-label .form__checkbox-check::before {
       opacity: 1;

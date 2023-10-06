@@ -182,6 +182,14 @@ main {
           flex: 1 1 auto;
 }
 
+h4 {
+  color: #000;
+  font-family: var(--primary-font);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 125.9%;
+}
+
 .page-title {
   color: #0E0E0E;
   font-family: var(--primary-font);
@@ -2422,6 +2430,7 @@ main {
   height: 0;
   position: absolute;
   z-index: -100;
+  opacity: 0;
 }
 
 .form__checkbox-input:checked ~ .form__checkbox-label .form__checkbox-check::before {
@@ -3579,6 +3588,10 @@ main {
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
+  }
+
+  h4 {
+    font-size: 22px;
   }
 
   .page-title {
