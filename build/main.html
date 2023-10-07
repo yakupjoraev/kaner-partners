@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+  <link rel="stylesheet" href="./css/intlTelInput.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -306,6 +307,13 @@
 <section class="step-form section">
   <div class="container">
     <div class="step-form__inner">
+      <div class="step-form__header">
+        <img src="./img/document 1.png" alt="document ">
+
+        <h4>
+          Ответьте на 5 вопросов и получите подборку объектов по вашим критериям:
+        </h4>
+      </div>
       <img src="./img/qq.jpg" alt="">
     </div>
   </div>
@@ -329,7 +337,7 @@
       <label class="form__label" for="input2">Введите телефон</label>
 
       <div class="form__input-phone">
-        <div class="form__input-select">
+        <!-- <div class="form__input-select">
           <div class="form__input-selected">
             <img class="form__input-selected-icon" src="./img/ivrite.png" alt="">
 
@@ -339,9 +347,9 @@
               <img src="./img/form__input-arrow.svg" alt="arrow">
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <input class="form__input" type="tel" placeholder="Введите телефон" id="input2">
+        <input class="form__input phone" type="tel" placeholder="Введите телефон" id="phone">
       </div>
     </div>
 
@@ -356,6 +364,8 @@
     </div>
 
     <div class="form__footer">
+      <button type="submit" class="form__btn btn">Получить результаты</button>
+
       <input class="form__checkbox-input" type="checkbox" id="checkbox1" checked>
       <label class="form__checkbox-label" for="checkbox1">
         <div class="form__checkbox-check"></div>
@@ -365,8 +375,6 @@
           <a href="#" target="_blank">Политикой конфиденциальности</a> ознакомлен и согласен
         </div>
       </label>
-      <div class="form__checkbox"></div>
-      <button type="submit" class="form__btn btn">Получить результаты</button>
     </div>
   </div>
 </form>
@@ -393,7 +401,7 @@
           <label class="form__label" for="input5">Введите телефон</label>
 
           <div class="form__input-phone">
-            <div class="form__input-select">
+            <!-- <div class="form__input-select">
               <div class="form__input-selected">
                 <img class="form__input-selected-icon" src="./img/ivrite.png" alt="">
 
@@ -403,9 +411,9 @@
                   <img src="./img/form__input-arrow.svg" alt="arrow">
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <input class="form__input" type="tel" placeholder="Введите телефон" id="input5">
+            <input class="form__input phone" type="tel" placeholder="Введите телефон" id="phone2">
           </div>
         </div>
 
@@ -420,6 +428,8 @@
         </div>
 
         <div class="form__footer">
+          <button type="submit" class="form__btn btn">Получить результаты</button>
+
           <input class="form__checkbox-input" type="checkbox" id="checkbox2" checked>
           <label class="form__checkbox-label" for="checkbox2">
             <div class="form__checkbox-check"></div>
@@ -429,8 +439,6 @@
               <a href="#" target="_blank">Политикой конфиденциальности</a> ознакомлен и согласен
             </div>
           </label>
-          <div class="form__checkbox"></div>
-          <button type="submit" class="form__btn btn">Получить результаты</button>
         </div>
       </div>
     </form>
@@ -484,6 +492,12 @@
 
 </body>
 
+<script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="./js/intlTelInput.min.js"></script>
+<script src="./js/intlTelInput-jquery.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/utils.js"></script>
 <script src="./js/scripts.min.js"></script>
+
 
 </html>

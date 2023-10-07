@@ -91,6 +91,11 @@
   }
 }
 
+.menu__item-language li a {
+  display: flex !important;
+  align-items: center;
+}
+
 .menu__item-language-icon {
   width: 28px;
   height: auto;

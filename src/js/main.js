@@ -143,6 +143,161 @@ function tabsContainer() {
 
 tabsContainer();
 
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+function validate() {
+
+  var number = $("#phone").intlTelInput('getNumber');
+  iso = $("#phone").intlTelInput('getSelectedCountryData').iso2;
+
+  var exampleNumber = intlTelInputUtils.getExampleNumber(iso, 0, 0);
+  if (number == '')
+    number = exampleNumber;
+
+  var formattedNumber = intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.NATIONAL);
+  var isValidNumber = intlTelInputUtils.isValidNumber(number, iso);
+  var validationError = intlTelInputUtils.getValidationError(number, iso);
+
+  console.log(number);
+  console.log(formattedNumber);
+  console.log(intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.INTERNATIONAL));
+  console.log(intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.E164));
+  console.log(intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.RFC3966));
+  console.log(isValidNumber);
+  console.log(validationError);
+
+}
+
+
+//var input = document.querySelector("#phone");
+
+$("#phone").intlTelInput({
+  geoIpLookup: function (callback) {
+    $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "";
+      callback(countryCode);
+    });
+  },
+  initialCountry: "ru", // Россия по умолчанию
+  preferredCountries: ["ru", "il"], // Россия и Израиль в начале списка
+  separateDialCode: true,
+});
+
+// Применить маску при выборе страны по умолчанию
+var selectedCountry = $("#phone").intlTelInput('getSelectedCountryData');
+var dialCode = selectedCountry.dialCode;
+var maskNumber = intlTelInputUtils.getExampleNumber(selectedCountry.iso2, 0, 0);
+maskNumber = intlTelInputUtils.formatNumber(maskNumber, selectedCountry.iso2, 2);
+maskNumber = maskNumber.replace('+' + dialCode + ' ', '');
+var mask = maskNumber.replace(/[0-9+]/ig, '0');
+$('#phone').mask(mask, { placeholder: maskNumber });
+
+// Обработчик события при изменении страны
+$('#phone').on('countrychange', function (e) {
+  $(this).val('');
+
+  var selectedCountry = $(this).intlTelInput('getSelectedCountryData');
+  var dialCode = selectedCountry.dialCode;
+  var maskNumber = intlTelInputUtils.getExampleNumber(selectedCountry.iso2, 0, 0);
+  maskNumber = intlTelInputUtils.formatNumber(maskNumber, selectedCountry.iso2, 2);
+  maskNumber = maskNumber.replace('+' + dialCode + ' ', '');
+  var mask = maskNumber.replace(/[0-9+]/ig, '0');
+  $('#phone').mask(mask, { placeholder: maskNumber });
+});
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+function validate() {
+
+  var number = $("#phone2").intlTelInput('getNumber');
+  iso = $("#phone2").intlTelInput('getSelectedCountryData').iso2;
+
+  var exampleNumber = intlTelInputUtils.getExampleNumber(iso, 0, 0);
+  if (number == '')
+    number = exampleNumber;
+
+  var formattedNumber = intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.NATIONAL);
+  var isValidNumber = intlTelInputUtils.isValidNumber(number, iso);
+  var validationError = intlTelInputUtils.getValidationError(number, iso);
+
+  console.log(number);
+  console.log(formattedNumber);
+  console.log(intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.INTERNATIONAL));
+  console.log(intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.E164));
+  console.log(intlTelInputUtils.formatNumber(number, iso, intlTelInputUtils.numberFormat.RFC3966));
+  console.log(isValidNumber);
+  console.log(validationError);
+
+}
+
+
+//var input = document.querySelector("#phone");
+
+$("#phone2").intlTelInput({
+  geoIpLookup: function (callback) {
+    $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "";
+      callback(countryCode);
+    });
+  },
+  //hiddenInput: "full_number",
+  initialCountry: "auto",
+  separateDialCode: true,
+  //autoPlaceholder: "off",
+});
+
+$('#phone2').on('countrychange', function (e) {
+
+  $(this).val('');
+
+  var selectedCountry = $(this).intlTelInput('getSelectedCountryData');
+  var dialCode = selectedCountry.dialCode;
+  var maskNumber = intlTelInputUtils.getExampleNumber(selectedCountry.iso2, 0, 0);
+  console.log("placeholder > " + maskNumber);
+  maskNumber = intlTelInputUtils.formatNumber(maskNumber, selectedCountry.iso2, 2);
+  console.log("placeholder > " + maskNumber);
+  maskNumber = maskNumber.replace('+' + dialCode + ' ', '');
+  console.log("placeholder > " + maskNumber);
+  mask = maskNumber.replace(/[0-9+]/ig, '0');
+  //maskPlaceHolder = mask.replace(/[0-9+]/ig, '_');
+
+  $('#phone2').mask(mask, { placeholder: maskNumber });
+});
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 const modals = document.querySelectorAll('.modal');

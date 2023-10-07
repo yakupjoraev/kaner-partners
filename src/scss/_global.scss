@@ -56,6 +56,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 main {
@@ -69,8 +70,13 @@ h4 {
   font-weight: 700;
   line-height: 125.9%;
 
-  @media (max-width: $breakpoint768) {
+
+  @media (max-width: $breakpoint992) {
     font-size: 22px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 20px;
   }
 }
 
@@ -122,6 +128,12 @@ h4 {
     border-color: #373737;
     color: #373737;
   }
+}
+
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+  border-right: 1px solid rgba(0, 0, 0, .5);
 }
 
 // Animations
