@@ -136,6 +136,17 @@ h4 {
   border-right: 1px solid rgba(0, 0, 0, .5);
 }
 
+.wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #dc3232;
+  color: #dc3232;
+  text-align: center;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  font-size: 13px;
+}
+
 // Animations
 // Fade
 @keyframes fade {

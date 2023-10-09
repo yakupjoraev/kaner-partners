@@ -231,7 +231,6 @@ $('#phone').on('countrychange', function (e) {
 
 
 
-
 function validate() {
 
   var number = $("#phone2").intlTelInput('getNumber');
@@ -265,27 +264,30 @@ $("#phone2").intlTelInput({
       callback(countryCode);
     });
   },
-  //hiddenInput: "full_number",
-  initialCountry: "auto",
+  initialCountry: "ru", // Россия по умолчанию
+  preferredCountries: ["ru", "il"], // Россия и Израиль в начале списка
   separateDialCode: true,
-  //autoPlaceholder: "off",
 });
 
-$('#phone2').on('countrychange', function (e) {
+// Применить маску при выборе страны по умолчанию
+var selectedCountry = $("#phone2").intlTelInput('getSelectedCountryData');
+var dialCode = selectedCountry.dialCode;
+var maskNumber = intlTelInputUtils.getExampleNumber(selectedCountry.iso2, 0, 0);
+maskNumber = intlTelInputUtils.formatNumber(maskNumber, selectedCountry.iso2, 2);
+maskNumber = maskNumber.replace('+' + dialCode + ' ', '');
+var mask = maskNumber.replace(/[0-9+]/ig, '0');
+$('#phone2').mask(mask, { placeholder: maskNumber });
 
+// Обработчик события при изменении страны
+$('#phone2').on('countrychange', function (e) {
   $(this).val('');
 
   var selectedCountry = $(this).intlTelInput('getSelectedCountryData');
   var dialCode = selectedCountry.dialCode;
   var maskNumber = intlTelInputUtils.getExampleNumber(selectedCountry.iso2, 0, 0);
-  console.log("placeholder > " + maskNumber);
   maskNumber = intlTelInputUtils.formatNumber(maskNumber, selectedCountry.iso2, 2);
-  console.log("placeholder > " + maskNumber);
   maskNumber = maskNumber.replace('+' + dialCode + ' ', '');
-  console.log("placeholder > " + maskNumber);
-  mask = maskNumber.replace(/[0-9+]/ig, '0');
-  //maskPlaceHolder = mask.replace(/[0-9+]/ig, '_');
-
+  var mask = maskNumber.replace(/[0-9+]/ig, '0');
   $('#phone2').mask(mask, { placeholder: maskNumber });
 });
 

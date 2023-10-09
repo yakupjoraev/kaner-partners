@@ -244,6 +244,17 @@ h4 {
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #dc3232;
+  color: #dc3232;
+  text-align: center;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  font-size: 13px;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -437,6 +448,10 @@ h4 {
   color: #fff;
 }
 
+.header-main .menu__item-language span {
+  color: #fff;
+}
+
 .header-main .menu__item-language img:last-child {
   -webkit-filter: contrast(1) grayscale(1);
           filter: contrast(1) grayscale(1);
@@ -461,6 +476,14 @@ h4 {
 .header-main .menu__item-link--btn {
   border-color: #fff;
   color: #fff;
+}
+
+.menu__item-language * {
+  padding: 0 !important;
+}
+
+.menu__item-language a {
+  padding: 0;
 }
 
 .accordion {
@@ -696,6 +719,15 @@ h4 {
      -moz-column-gap: 10px;
           column-gap: 10px;
   row-gap: 10px;
+}
+
+.contacts__inputs .form__input {
+  padding: 17px 60px;
+  border: 0.5px solid rgba(0, 0, 0, 0.32);
+}
+
+.contacts__inputs .iti--separate-dial-code .iti__selected-flag {
+  border-right: 1px solid rgba(0, 0, 0, 0.32);
 }
 
 .contacts__input {
@@ -4056,11 +4088,16 @@ h4 {
   }
 
   .logo img {
-    width: 80px;
+    width: 70px;
   }
 
   .menu__item-link--btn {
-    padding: 8px 6px;
+    padding: 6px 4px;
+    font-size: 10px;
+  }
+
+  .header-main .menu__item-language span {
+    font-size: 12px;
   }
 
   .contacts__map-link:nth-child(1) {

@@ -77,6 +77,15 @@
     @media (max-width: $breakpoint768) {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    .form__input {
+      padding: 17px 60px;
+      border: 0.5px solid rgba(0, 0, 0, .32);
+    }
+
+    .iti--separate-dial-code .iti__selected-flag {
+      border-right: 1px solid rgba(0, 0, 0, .32);
+    }
   }
 
   // .contacts__input
