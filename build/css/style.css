@@ -2632,6 +2632,16 @@ h4 {
   opacity: 1;
 }
 
+.form__footer .wpcf7-list-item {
+  margin: 0;
+}
+
+.form .wpcf7-response-output {
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -2692,6 +2702,12 @@ h4 {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.modal-content .wpcf7-response-output {
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 1em 1em;
 }
 
 .primary-font .accordion__header {

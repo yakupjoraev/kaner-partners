@@ -1032,3 +1032,19 @@
 .form__checkbox-input:checked~.wpcf7-list-item-label .form__checkbox-label .form__checkbox-check::before {
   opacity: 1;
 }
+
+.form__footer {
+
+  .wpcf7-list-item {
+    margin: 0;
+  }
+}
+
+.form {
+
+  .wpcf7-response-output {
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 1em 1em;
+  }
+}
