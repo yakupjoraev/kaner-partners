@@ -255,6 +255,10 @@ h4 {
   font-size: 13px;
 }
 
+.contacts__form-main .wpcf7-not-valid-tip {
+  bottom: -32px;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -709,7 +713,7 @@ h4 {
           flex-direction: column;
   row-gap: 5px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contacts__inputs {
@@ -2622,6 +2626,10 @@ h4 {
   width: 1000%;
   height: 2px;
   background: rgba(0, 0, 0, 0.15);
+}
+
+.form__checkbox-input:checked ~ .wpcf7-list-item-label .form__checkbox-label .form__checkbox-check::before {
+  opacity: 1;
 }
 
 .modal {

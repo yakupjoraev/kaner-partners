@@ -147,6 +147,12 @@ h4 {
   font-size: 13px;
 }
 
+.contacts__form-main {
+  .wpcf7-not-valid-tip {
+    bottom: -32px;
+  }
+}
+
 // Animations
 // Fade
 @keyframes fade {

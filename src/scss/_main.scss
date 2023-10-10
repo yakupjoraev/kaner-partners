@@ -1025,3 +1025,10 @@
     }
   }
 }
+
+
+
+
+.form__checkbox-input:checked~.wpcf7-list-item-label .form__checkbox-label .form__checkbox-check::before {
+  opacity: 1;
+}
