@@ -439,6 +439,14 @@ h4 {
   cursor: pointer;
 }
 
+.header .menu__item-language p {
+  color: #000;
+}
+
+.header .menu__item-language span {
+  color: #000;
+}
+
 .header-main {
   position: absolute;
   left: 50%;
@@ -1344,10 +1352,12 @@ h4 {
 .actual-objects__stages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   row-gap: 60px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  padding: 0 60px;
 }
 
 .actual-objects__stages-item {
@@ -1384,14 +1394,14 @@ h4 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 15px;
-  padding-left: 60px;
+  padding-left: 48px;
   margin-top: -10px;
 }
 
 .actual-objects__stages-info p {
   color: #000;
   font-family: var(--primary-font);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 125.9%;
 }
@@ -1759,6 +1769,7 @@ h4 {
   height: 678px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .actual-objects__column-block p {
@@ -3417,7 +3428,9 @@ h4 {
 
   .actual-objects__stages-list {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: baseline;
     row-gap: 40px;
+    padding: 0;
   }
 
   .actual-objects__cities {
@@ -4123,6 +4136,10 @@ h4 {
   .menu__item-link--btn {
     padding: 6px 4px;
     font-size: 10px;
+  }
+
+  .header .menu__item-language span {
+    font-size: 12px;
   }
 
   .header-main .menu__item-language span {
