@@ -2008,6 +2008,8 @@ h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
   border-radius: 0px 10px 10px 0px;
 }
 
