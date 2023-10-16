@@ -208,11 +208,11 @@
       border-radius: 15px;
 
       @media (max-width: $breakpoint992) {
-        height: 400px;
+        height: auto;
       }
 
       @media (max-width: $breakpoint768) {
-        height: 300px;
+        height: auto;
       }
     }
 
@@ -233,7 +233,8 @@
       }
 
       @media (max-width: $breakpoint768) {
-        font-size: 20px;
+        margin: 10px auto 0;
+        font-size: 15px;
       }
     }
 
@@ -649,7 +650,7 @@
   margin-bottom: 70px;
 
   @media (max-width: $breakpoint992) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     row-gap: 20px;
     margin-bottom: 60px;
   }
@@ -658,6 +659,7 @@
     margin-bottom: 40px;
   }
 }
+
 
 .actual-objects__points-info {
   flex: 0 1 500px;
@@ -824,6 +826,14 @@
 
     li {
       font-size: 18px;
+    }
+  }
+
+
+  @media (max-width: $breakpoint768) {
+    li {
+      margin-bottom: 16px;
+      line-height: 120%;
     }
   }
 }

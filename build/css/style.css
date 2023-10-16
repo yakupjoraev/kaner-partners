@@ -259,6 +259,10 @@ h4 {
   bottom: -32px;
 }
 
+.wpcf7 form .wpcf7-response-output {
+  margin: 2em auto 1em !important;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -3421,7 +3425,7 @@ h4 {
   }
 
   .actual-objects__info img {
-    height: 400px;
+    height: auto;
   }
 
   .actual-objects__stages {
@@ -3481,9 +3485,9 @@ h4 {
 
   .actual-objects__points-block {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     row-gap: 20px;
     margin-bottom: 60px;
   }
@@ -3802,11 +3806,12 @@ h4 {
   }
 
   .actual-objects__info img {
-    height: 300px;
+    height: auto;
   }
 
   .actual-objects__info a {
-    font-size: 20px;
+    margin: 10px auto 0;
+    font-size: 15px;
   }
 
   .actual-objects__stages {
@@ -3916,6 +3921,11 @@ h4 {
 
   .actual-objects__num-info h4 {
     font-size: 22px;
+  }
+
+  .actual-objects__num-info li {
+    margin-bottom: 16px;
+    line-height: 120%;
   }
 
   .actual-objects__column-block {
