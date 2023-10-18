@@ -1281,6 +1281,10 @@ h4 {
   margin-bottom: 65px;
 }
 
+.actual-objects__info.news-detal__texts {
+  row-gap: 0;
+}
+
 .actual-objects__info h3 {
   margin-bottom: 20px;
   color: #000;
@@ -1320,7 +1324,7 @@ h4 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px auto;
+  margin: 0 auto;
   color: #003EB6;
   text-align: center;
   font-family: var(--primary-font);
@@ -3810,7 +3814,7 @@ h4 {
   }
 
   .actual-objects__info a {
-    margin: 10px auto 0;
+    margin: 10px auto -15px;
     font-size: 15px;
   }
 
@@ -4022,6 +4026,7 @@ h4 {
 
   .info-block__benifits ul li {
     font-size: 18px;
+    line-height: 140%;
   }
 
   .steps__inner {
