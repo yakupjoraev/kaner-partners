@@ -1290,7 +1290,7 @@ h4 {
   color: #000;
   text-align: center;
   font-family: var(--primary-font);
-  font-size: 25px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 130.4%;
@@ -1324,7 +1324,7 @@ h4 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto -20px;
   color: #003EB6;
   text-align: center;
   font-family: var(--primary-font);
